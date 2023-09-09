@@ -1,6 +1,7 @@
 ## MODULES
 import streamlit as st
 import pickle
+from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -14,7 +15,7 @@ with st.sidebar:
     st.title('Chat with PDF AI app - dev')
     
 # Load dotenv file
-#load_dotenv()
+load_dotenv()
 
 def main():
     st.write("Chat with a PDF")
