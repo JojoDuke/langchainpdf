@@ -13,7 +13,6 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
 
-
 with st.sidebar:
     st.title('Chat with PDF AI app - dev')
     
