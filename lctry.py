@@ -17,7 +17,7 @@ with st.sidebar:
 load_dotenv()
 
 def main():
-    st.write("Chat with a PDF or CSV")
+    st.write("Chat with a PDF or ChjhSV")
     
     # Section to upload pdf file
     pdf = st.file_uploader("Upload a PDF", type='pdf')
@@ -59,11 +59,12 @@ def main():
             # Do semantic search
             docs = vectorStore.similarity_search(query=query, k=3)
             
-            llm = ChatOpenAI(temperature=0.3, model="gpt-4")
+            llm = ChatOpenAI()
             chain = load_qa_chain(llm=llm, chain_type="stuff")
             response = chain.run(input_documents=docs, question=query)
             
             st.write(response)
+            
         
         
         
