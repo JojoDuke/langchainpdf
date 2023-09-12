@@ -10,7 +10,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 import os
 
-
 with st.sidebar:
     st.title('Chat with PDF AI app - dev')
     
@@ -18,7 +17,7 @@ with st.sidebar:
 load_dotenv()
 
 def main():
-    st.write("Chat with a PDF")
+    st.write("Chat with a PDF or CSV")
     
     # Section to upload pdf file
     pdf = st.file_uploader("Upload a PDF", type='pdf')
