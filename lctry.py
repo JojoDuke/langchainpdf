@@ -59,7 +59,7 @@ def main():
             # Do semantic search
             docs = vectorStore.similarity_search(query=query, k=3)
             
-            llm = ChatOpenAI()
+            llm = ChatOpenAI(temperature=0.3, model="gpt-4")
             chain = load_qa_chain(llm=llm, chain_type="stuff")
             response = chain.run(input_documents=docs, question=query)
             
