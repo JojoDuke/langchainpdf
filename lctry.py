@@ -20,7 +20,8 @@ def main():
     st.write("Chat with a PDF or CSV")
     
     # Section to upload pdf file
-    pdf = st.file_uploader("Upload your file", type='csv')
+    pdf = st.file_uploader("Upload a PDF", type='pdf')
+    csv = st.file_uploader("Upload a CSV", type='csv')
     
     if pdf is not None:
         pdfReader = PdfReader(pdf)
