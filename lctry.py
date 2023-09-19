@@ -13,7 +13,7 @@ import os
 with st.sidebar:
     st.title('Chat with PDF AI app - dev')
     
-# Load dotenv file
+# Load the dotenv file
 load_dotenv()
 
 def main():
