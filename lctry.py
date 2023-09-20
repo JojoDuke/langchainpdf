@@ -17,7 +17,7 @@ with st.sidebar:
 load_dotenv()
 
 def main():
-    st.write("Chat with a PDF or ChjhSV")
+    st.write("Chat with a PDF or CSV")
     
     # Section to upload pdf file
     pdf = st.file_uploader("Upload a PDF", type='pdf')
