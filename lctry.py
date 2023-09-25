@@ -51,7 +51,7 @@ def main():
                 pickle.dump(vectorStore, f)
                 
                 
-        # Accepts user queries
+        # Textbox to accept user queries
         query = st.text_input("Ask your PDF anything:")
         st.write(query)
         
